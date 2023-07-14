@@ -1,5 +1,7 @@
 {
   "item.truecraft.steel_ingot": "Steel Ingot",
   "item.truecraft.iron_dust": "Iron Dust",
-  "item.truecraft.carbon_dust": "Carbon Dust"
+  "item.truecraft.carbon_dust": "Carbon Dust",
+
+  "block.truecraft.steel_block": "Steel Block"
 }

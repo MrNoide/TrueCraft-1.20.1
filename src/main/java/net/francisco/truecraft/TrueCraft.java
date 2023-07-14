@@ -1,6 +1,7 @@
 package net.francisco.truecraft;
 
 import com.mojang.logging.LogUtils;
+import net.francisco.truecraft.block.ModBlocks;
 import net.francisco.truecraft.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,7 @@ public class TrueCraft {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -41,7 +43,9 @@ public class TrueCraft {
             event.accept(ModItems.STEEL_INGOT);
             event.accept(ModItems.CARBON_DUST);
             event.accept(ModItems.IRON_DUST);
+            event.accept(ModBlocks.STEEL_BLOCK);
         }
+
     }
 
     @SubscribeEvent
